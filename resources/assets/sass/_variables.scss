@@ -1,9 +1,21 @@
 // Colors
 // =================================================
-$brand-primary: #153FA6;
+$brand-primary: #153fa6;
 
 $min-width: 769px;
 
-$color-primary : #FFF;
-$color-secondary : #B89D85;
-$color-sub : #313134;
+$color-primary: #fff;
+$color-secondary: #b89d85;
+$color-sub: #313134;
+
+@font-face {
+  font-family: "MyYuGothicM";
+  font-weight: normal;
+  src: local("YuGothic-Medium"), /* PostScript Name = localの正式な指定方法 */ local("Yu Gothic Medium"),
+    /* PostScript Nameを認識できないChrome用にFull Nameを指定 */ local("YuGothic-Regular"); /* 游ゴシックMediumが存在しないWindows8.1用 */
+}
+@font-face {
+  font-family: "MyYuGothicM";
+  font-weight: bold;
+  src: local("YuGothic-Bold"), /* PostScript Name = localの正式な指定方法 */ local("Yu Gothic"); /* PostScript Nameを認識できないChrome用にFull Nameを指定 */
+}
