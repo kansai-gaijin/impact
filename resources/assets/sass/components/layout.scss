@@ -1,0 +1,29 @@
+.large-wrapper {
+  max-width: 1640px;
+  padding: 0 10px;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: orange;
+}
+.small-wrapper {
+  max-width: 1090px;
+  padding: 0 10px;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: red;
+}
+
+.small-wrapper::after,
+.large-wrapper::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+@media (min-width: $min-width) {
+  .large-wrapper {
+    padding: 0 20px;
+  }
+  .small-wrapper {
+    padding: 0 20px;
+  }
+}
