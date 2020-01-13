@@ -1,3 +1,3 @@
-# IMPACT - Theme that uses tonic.
+# IMPACT - Theme that uses tonik baby.
 
 > Theme Using Tonik for IMPACT
