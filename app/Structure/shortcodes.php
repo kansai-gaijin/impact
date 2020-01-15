@@ -35,3 +35,36 @@ function render_button_shortcode($atts, $content)
     return ob_get_clean();
 }
 add_shortcode('button', 'Impact\Theme\App\Structure\render_button_shortcode');
+
+
+/**
+ * Renders contact info
+ * @return string
+ */
+function render_contact_info(){
+  
+  ob_start();
+
+?>
+<div class="imp-contact-info">
+  <h4>Address</h4>
+  <p>
+    〒000-0000<br/>
+    ヲコスケ必権ぴねドづ帳開写返ソオヒテ学意治浅店をぎ<br/>
+    てー邦本必わけ毎器メ平非トざゅ転己我えち
+  </p>
+  <h4>Tel</h4>
+  <p>
+    <a href="tel:06-000-0000">06-000-0000</a>
+  </p>
+  <h4>Mail</h4>
+  <p>
+    <a href="mailto:info@impact.co.jp">info@impact.co.jp</a>
+  </p>
+</div>
+<?
+
+  return ob_get_clean();
+
+}
+add_shortcode('contact_info', 'Impact\Theme\App\Structure\render_contact_info');

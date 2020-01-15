@@ -1,0 +1,124 @@
+#site-footer {
+  .footer--contact {
+    background-color: $color-sub;
+    padding: 60px 0 30px 0;
+  }
+  .imp-contact-info {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+.footer--branding {
+  padding-top: 60px;
+  .footer--logo {
+    padding: 0 20px 60px 20px;
+    text-align: center;
+  }
+  .footer--nav {
+    li {
+      border-top: 1px solid $color-secondary;
+    }
+    li:last-of-type {
+      border-bottom: 1px solid $color-secondary;
+    }
+    a {
+      display: block;
+      padding: 20px;
+      font-size: 18px;
+      line-height: 18px;
+      color: $color-primary;
+      text-decoration: none;
+      transition:0.3s ease-in-out;
+    }
+    a:hover{
+      color:transparentize($header-nav-link-hover-color, 0.3)
+    }
+  }
+  .copywrite {
+    padding: 60px 20px 0 20px;
+    p {
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      white-space: nowrap;
+      margin: 0;
+    }
+  }
+}
+
+.footer--access{
+  position:relative;
+  z-index:0;
+  padding-bottom:60px;
+  .access-map{
+    padding-bottom:50px;
+  }
+  ::after{
+    content:"";
+    width:100%;
+    height:70%;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background-color:$color-sub;
+    z-index:-1;
+  }
+}
+
+
+@media (min-width: 769px) {
+  #site-footer {
+    .footer--contact {
+      padding: 80px 0 50px 0;
+      .row {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .imp-contact-info {
+      margin-top: 0;
+      max-width: 100%;
+    }
+  }
+  #site-footer .footer--branding {
+    padding:80px 20px;
+    .footer--logo{
+      padding:0 0 30px 0;
+    }
+    .copywrite{
+      margin:0;
+      padding:0;
+      p{
+        margin-bottom:0;
+        padding:0;
+      }
+    }
+    .footer--nav{
+      margin-bottom:50px;
+      padding:0;
+      ul{
+        display:flex;
+        justify-content: center;
+        padding:0;
+        margin:0;
+        li{
+          margin:0 20px;
+          border:none;
+          padding:0;
+          a{
+            padding:0 20px;
+          }
+        }
+      }
+    }
+  }
+  .footer--access{
+    padding-bottom:80px;
+  }
+}

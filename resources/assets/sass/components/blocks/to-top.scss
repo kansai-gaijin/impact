@@ -1,0 +1,35 @@
+.to-top {
+  padding: 60px 20px;
+  text-align: center;
+}
+.to-top button {
+  padding: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 51px;
+  width: 51px;
+  border: none;
+  background-color: $color-sub;
+  color: $color-secondary;
+  transition:all 0.3s ease-in-out;
+}
+.to-top button:hover {
+  background-color: lighten($color-sub,3);
+  color: transparentize($color-secondary, 0.3);
+}
+@media(min-width:769px){
+  .to-top{
+    position:fixed;
+    bottom:40px;
+    right:40px;
+    padding:0;
+    border:1px solid #18181a;
+    opacity:0;
+    transform:translateY(100%);
+    transition:transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.35s ease-in-out;
+  }
+  body.scrolled .to-top{
+    opacity:1;
+    transform: translateY(0);
+  }
+}

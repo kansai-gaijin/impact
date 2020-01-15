@@ -15,15 +15,31 @@ namespace Impact\Theme\Footer;
 use function Impact\Theme\App\template;
 
 /**
+ * Checks for contact page
+ * 
+ * @return boolean
+ */
+function is_contact(){
+  
+  $p_id = get_the_ID();
+
+  $wp_contact_id = 5;
+
+  return ($wp_contact_id === $p_id);
+}
+
+/**
  * Renders index page footer.
  *
  * @see resources/templates/index.tpl.php
  */
 function render_footer()
 {
-  template('partials/footer');
+  template('partials/footer', ['is_contact' => is_contact()]);
 }
 add_action('theme/foot/footer', 'Impact\Theme\Footer\render_footer');
+
+
 
 /**
  * Renders layout's footer.

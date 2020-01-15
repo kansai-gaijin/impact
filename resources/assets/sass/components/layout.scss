@@ -3,9 +3,12 @@
 */
 
 .site-container {
-  max-width: 100%;
+
 }
 .site-container {
+  max-width: 100%;
+  flex-grow:1;
+  width:100%;
   background: #ffffff;
   border-top: 0px solid #dddddd;
   border-bottom: 0px solid #dddddd;
@@ -26,7 +29,7 @@
   margin: 0px auto 0px;
   overflow: hidden;
   clear: both;
-  margin-top:54px;
+  height:100%;
 }
 
 /*

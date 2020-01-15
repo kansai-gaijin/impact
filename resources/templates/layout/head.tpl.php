@@ -5,6 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <?php wp_head(); ?>
+        <script src="https://kit.fontawesome.com/5ac0764158.js" crossorigin="anonymous"></script>
     </head>
     <body <?php body_class(); ?>>
       <?php do_action('theme/head/header'); ?>

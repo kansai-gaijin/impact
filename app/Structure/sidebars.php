@@ -23,11 +23,26 @@ use function Impact\Theme\App\config;
 function register_widget_areas()
 {
     register_sidebar([
-        'id' => 'sidebar',
-        'name' => __('Sidebar', config('textdomain')),
-        'description' => __('Website sidebar', config('textdomain')),
-        'before_title' => '<h5>',
-        'after_title' => '</h5>',
+      'id' => 'footer_col_1',
+      'name' => __('フッターコラム①', config('textdomain')),
+      'description' => __('フッターのコラム①', config('textdomain')),
+      'before_title' => '<h5>',
+      'after_title' => '</h5>',
     ]);
+    register_sidebar([
+      'id' => 'footer_col_2',
+      'name' => __('フッターコラム②', config('textdomain')),
+      'description' => __('フッターのコラム②', config('textdomain')),
+      'before_title' => '<h5>',
+      'after_title' => '</h5>',
+    ]);
+
+    register_sidebar([
+      'id' => 'sidebar',
+      'name' => __('アーカイブサイドバー', config('textdomain')),
+      'description' => __('投稿のサイドバー', config('textdomain')),
+      'before_title' => '<h5>',
+      'after_title' => '</h5>',
+  ]);
 }
 add_action('widgets_init', 'Impact\Theme\App\Structure\register_widget_areas');
