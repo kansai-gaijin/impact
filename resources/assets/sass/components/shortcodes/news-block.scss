@@ -1,0 +1,101 @@
+.news-grid--item {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.news-grid--item a {
+  display: block;
+  padding-top: 45%;
+  position: relative;
+  text-decoration: none;
+}
+.news-grid--item figure {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.news-grid--item .content {
+  background-color: black;
+  padding: 20px;
+  background: rgb(16, 16, 16);
+  background: linear-gradient(
+    0deg,
+    rgba(16, 16, 16, 0.9948179955575981) 0%,
+    rgba(6, 6, 6, 0.4) 74%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.news-grid--item .content h3 {
+  color: white;
+  font-size: 16px;
+  line-height: 27px;
+  margin: 10px 0 0 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  text-align: justify;
+  width:100%;
+}
+.news-grid--item .content p.date {
+  font-size: 14px;
+  color: white;
+  line-height: 14px;
+}
+@media (min-width: 695px) {
+  .news-grid--item a {
+    padding-top: 30%;
+  }
+}
+@media (min-width: 769px) {
+  .news-grid--wrapper {
+  }
+  .news-grid--item {
+    width: 34%;
+    float: left;
+    margin-bottom: 10px;
+  }
+  .news-grid--item.large {
+    max-width: 66%;
+    width: 66%;
+    margin-bottom: 0;
+    padding-right: 10px;
+  }
+  .news-grid--item a {
+    padding-top: 40%;
+  }
+  .news-grid--item.large a {
+    padding-top: 61.7777777%;
+  }
+  .news-grid--item .content h3 {
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 10px 0 0 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: justify;
+    margin-top: 15px;
+  }
+  .news-grid--item.large .content h3 {
+    color: white;
+    font-size: 20px;
+    line-height: 33px;
+    margin: 10px 0 0 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: justify;
+    margin-top: 15px;
+  }
+  .news-grid--item .content p.date {
+    font-size: 16px;
+  }
+}

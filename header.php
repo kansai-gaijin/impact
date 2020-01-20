@@ -30,22 +30,6 @@ function render_header()
 add_action('theme/head/header', 'Impact\Theme\Header\render_header');
 
 /**
- * Renders page header
- * 
- * @see resources/templates/partials/page/page-header.tpl.php
- */
-function render_page_header(){
-
-  template('partials/page/page-header',[
-    'title' => get_the_title(),
-    'en_title' => get_post_meta( get_the_ID(), 'wpcf-english-title', true ),
-    'background' => get_post_meta( get_the_ID(), 'wpcf-header-picture', true)
-  ]);
-  
-}
-add_action('theme/header/after', 'Impact\Theme\Header\render_page_header');
-
-/**
  * Renders layout's head.
  *
  * @see resources/templates/layout/head.tpl.php

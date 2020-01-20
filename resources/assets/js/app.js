@@ -1,7 +1,7 @@
 import $ from 'jquery'
 
 
-jQuery.fn.isInView = function () {
+$.fn.isInView = function () {
   var o = jQuery(this).get(0); // It's your element
 
   var bounding = o.getBoundingClientRect();
@@ -48,18 +48,25 @@ function handlePageLoad() {
   var body = $('body');
   $(window).load(function () {
     body.addClass('loaded');
+    handleScrollAnims();
   });
 }
 
 function handleScrollAnims() {
   var objects = $(".anim");
   $(window).scroll(function(){
-    objects.forEach(function(obj, index){
-      obj.isInView.addClass('start');
+    objects.each(function(index){
+      let obj = $(this);
+      if(obj.isInView()){
+        obj.addClass('start');
+      }
     });
   });
-  objects.forEach(function(obj, index){
-    obj.isInView.addClass('start');
+  objects.each(function(index){
+    let obj = $(this);
+    if(obj.isInView()){
+      obj.addClass('start');
+    }
   });
 }
 
@@ -72,8 +79,6 @@ function Init() {
   handleNavToggles();
   win.scroll(handleNavScroll);
   handleToTops();
-
-  handleScrollAnims();
 
 }
 

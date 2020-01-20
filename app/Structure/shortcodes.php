@@ -62,9 +62,65 @@ function render_contact_info(){
     <a href="mailto:info@impact.co.jp">info@impact.co.jp</a>
   </p>
 </div>
-<?
+<?php
 
   return ob_get_clean();
 
 }
 add_shortcode('contact_info', 'Impact\Theme\App\Structure\render_contact_info');
+
+/**
+ * Renders news-grid
+ * @return string
+ */
+
+ function render_news_grid(){
+
+  ob_start();
+
+?>
+  <div class="news-grid">
+    <div class="news-grid--wrapper">
+
+      <article class="news-grid--item large">
+        <a href="#">
+          <figure style="background:url(http://impact.co.jp/wp-content/uploads/2020/01/service-3.jpg) no-repeat; background-position:center; background-size:cover;"></figure>
+          <div class="content">
+            <p class="date">
+              <i class="fas fa-clock"></i> 2020/01/07
+            </p>
+            <h3>読留ノタヌユ一価ラレ機画ヲコスケ必権ぴねドづ帳開写返ソオヒテ学意治浅店をぎ</h3>
+          </div>
+        </a>
+      </article>
+      <article class="news-grid--item">
+      <a href="#">
+          <figure style="background:url(http://impact.co.jp/wp-content/uploads/2020/01/service-3.jpg) no-repeat; background-position:center; background-size:cover;"></figure>
+          <div class="content">
+            <p class="date">
+              <i class="fas fa-clock"></i> 2020/01/07
+            </p>
+            <h3>読留ノタヌユ一価ラレ機画ヲコスケ必権ぴねドづ帳開写返ソオヒテ学意治浅店をぎ</h3>
+          </div>
+        </a>
+      </article>
+      <article class="news-grid--item">
+      <a href="#">
+          <figure style="background:url(http://impact.co.jp/wp-content/uploads/2020/01/service-3.jpg) no-repeat; background-position:center; background-size:cover;"></figure>
+          <div class="content">
+            <p class="date">
+              <i class="fas fa-clock"></i> 2020/01/07
+            </p>
+            <h3>読留ノタヌユ一価ラレ機画ヲコスケ必権ぴねドづ帳開写返ソオヒテ学意治浅店をぎ</h3>
+          </div>
+        </a>
+      </article>
+
+    </div>
+  </div>
+<?php
+
+  return ob_get_clean();
+
+}
+add_shortcode('news_grid', 'Impact\Theme\App\Structure\render_news_grid');

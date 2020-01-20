@@ -2,6 +2,7 @@
 
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post() ?>
+        <?php do_action('theme/page/content_before'); ?>
         <?php
             /**
              * Functions hooked into `theme/single/content` action.
@@ -10,6 +11,7 @@
              */
             do_action('theme/page/content');
         ?>
+        <?php do_action('theme/page/content_after'); ?>
     <?php endwhile; ?>
 <?php endif; ?>
 
