@@ -23,9 +23,10 @@ function is_contact(){
   
   $p_id = get_the_ID();
 
-  $wp_contact_id = 5;
+  $wp_contact_id = 18;
 
   return ($wp_contact_id === $p_id);
+  //return false;
 }
 
 /**
@@ -35,7 +36,7 @@ function is_contact(){
  */
 function render_footer()
 {
-  template('partials/footer', ['is_contact' => is_contact()]);
+  template('partials/footer', ['is_contact' => is_contact(), 'contact_url' => get_the_permalink(18)]);
 }
 add_action('theme/foot/footer', 'Impact\Theme\Footer\render_footer');
 

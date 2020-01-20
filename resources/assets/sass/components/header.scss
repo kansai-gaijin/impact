@@ -214,3 +214,37 @@ body.admin-bar {
     }
   }
 }
+
+#mobile-drawer {
+  background-color: transparentize($body-bg, 0.7);
+  position: fixed;
+  top: 54px;
+  left: 0;
+  width: 100%;
+  z-index: 500;
+  height: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  overflow-y: scroll;
+  ul {
+    background-color: $body-bg;
+  }
+  li {
+    border-top: 1px solid $color-secondary;
+  }
+  li:last-of-type {
+    border-bottom: 1px solid $color-secondary;
+  }
+  li a {
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+body.nav-open #mobile-drawer {
+  max-height: 100%;
+}
