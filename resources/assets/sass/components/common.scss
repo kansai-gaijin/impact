@@ -15,6 +15,15 @@ ul,li{
 .pc-only{
   display:none;
 }
+a{
+  text-decoration: none;
+}
+img{
+  max-width:100%;
+}
+.col-sm-12 figure{
+  margin-bottom:30px;
+}
 @media(min-width:769px){
   .pc-only{
     display:block;
