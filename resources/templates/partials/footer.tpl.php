@@ -37,7 +37,7 @@
               </div>
               <div class="col-sm-12 col-md-6">
                 <p class="button-wrapper anim fade-up">
-                  <a class="but-light" href="http://impact.co.jp/?page_id=18"><i class="fas fa-envelope"></i> フォームでお申し込み</a>
+                  <a class="but-light" href="https://impact-japan.net/?page_id=18"><i class="fas fa-envelope"></i> フォームでお申し込み</a>
                 </p>
               </div>
             </div>
@@ -76,7 +76,7 @@
   <div class="footer--branding">
     <div class="footer--logo">
       <a href="<?php echo get_site_url(); ?>">
-        <img src="http://impact.co.jp/wp-content/uploads/2020/01/impact-footer-lo.png" alt="" />
+        <img src="https://impact-japan.net/wp-content/uploads/2020/01/impact-footer-lo.png" alt="" />
       </a>
     </div>
     <nav class="footer--nav">

@@ -69,10 +69,10 @@ template('layout/footer');
 <div id="loader">
   <div class="loader-inner">
     <figure>
-      <img src="http://impact.co.jp/wp-content/uploads/2020/01/impact-logo.png" alt="" />
+      <img src="https://impact-japan.net/wp-content/uploads/2020/01/impact-logo.png" alt="" />
     </figure>
     <p>
-      <img src="http://impact.co.jp/wp-content/uploads/2020/01/loader.gif" />
+      <img src="https://impact-japan.net/wp-content/uploads/2020/01/loader.gif" />
     </p>
   </div>
 </div>

@@ -24,8 +24,8 @@ function render_page_header(){
   template('partials/page/page-header',[
     'title' => 'ニュース＆トピックス',
     'en_title' => 'NEWS',
-    'background' => 'http://impact.co.jp/wp-content/uploads/2020/01/news-header.jpg',
-    'background_mob' => 'http://impact.co.jp/wp-content/uploads/2020/01/news-header-mob.jpg',
+    'background' => 'https://impact-japan.net/wp-content/uploads/2020/01/news-header.jpg',
+    'background_mob' => 'https://impact-japan.net/wp-content/uploads/2020/01/news-header-mob.jpg',
   ]);
 }
 add_action('theme/index/content_before', 'Impact\Theme\Index\render_page_header');
