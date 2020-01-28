@@ -59,7 +59,7 @@ function render_contact_info(){
   </p>
   <h4>Mail</h4>
   <p>
-    <a href="mailto:info@impact.co.jp">info@impact.co.jp</a>
+    <a href="mailto:info@impact-japan.net">info@impact-japan.net</a>
   </p>
 </div>
 <?php
