@@ -10,9 +10,9 @@
         <div class="access-map anim fade">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13132.061270630966!2d135.4780734!3d34.6290532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000dd70d8ec9b97%3A0xa2c065d27d529d4b!2z5bGx5pys56ys5LiJ55eF6Zmi!5e0!3m2!1sja!2sjp!4v1579095207505!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
-        <div class="imp-button-wrapper anim fade">
+        <div class="imp-button-wrapper anim fade-up">
           <a href="#" class="imp-button">
-            グーグルマップで表示
+            グーグルマップで表示<i class="fas fa-caret-right"></i>
           </a>
         </div>
       </div>

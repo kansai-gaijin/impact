@@ -1,222 +1,206 @@
-html,body{
-  display:flex;
-  flex-direction:column;
-  height:100%;
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-ul,li{
-  margin:0;
-  list-style:none;
-  padding:0;
+ul,
+li {
+  margin: 0;
+  list-style: none;
+  padding: 0;
 }
 * {
   box-sizing: border-box;
 }
-.pc-only{
-  display:none;
+.pc-only {
+  display: none;
 }
 a,
-a:hover{
+a:hover {
   text-decoration: none;
 }
-img{
-  max-width:100%;
+img {
+  max-width: 100%;
 }
-.col-sm-12 figure{
-  margin-bottom:30px;
+.col-sm-12 figure {
+  margin-bottom: 30px;
 }
-@media(min-width:769px){
-  .pc-only{
-    display:block;
+@media (min-width: 769px) {
+  .pc-only {
+    display: block;
+  }
+  .sp-only {
+    display:none;
   }
 }
 
 /*********** FONTS ****************/
-h1,h2,h3,h4,h5{
-  font-family:$font-family-serif;
-  font-weight:bold;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-family-serif;
+  font-weight: bold;
 }
-h3{
-  font-size:20px;
-  line-height:35px;
-  margin:0 0 30px 0;
-  text-align:center;
+h3 {
+  font-size: 20px;
+  line-height: 35px;
+  margin: 0 0 30px 0;
+  text-align: center;
 }
-h5{
-  font-size:16px;
-  font-weight:bold;
-}
-.mincho{
-  font-family:$font-family-serif;
-}
-p{
-  font-size:14px;
+h4{
   line-height:30px;
-  color:$color-paragraph;
-  text-align:justify;
-  margin-bottom:20px;
 }
-p.imp-ttl-large{
-  font-family:$font-family-serif;
-  color:$text-color;
-  font-size:16px;
-  line-height:16px;
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.mincho {
+  font-family: $font-family-serif;
+}
+p {
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-paragraph;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+p.imp-ttl-large {
+  font-family: $font-family-serif;
+  color: $text-color;
+  font-size: 16px;
+  line-height: 16px;
   white-space: nowrap;
-  text-align:center;
-  position:relative;
-  padding-bottom:12px;
-  margin-bottom:30px;
-  font-weight:bold;
+  text-align: center;
+  position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
-p.imp-ttl-large::after{
-  display:block;
-  content:"";
-  height:3px;
-  position:absolute;
-  width:70px;
-  bottom:0;
-  left:50%;
+p.imp-ttl-large::after {
+  display: block;
+  content: "";
+  height: 3px;
+  position: absolute;
+  width: 70px;
+  bottom: 0;
+  left: 50%;
   transform: translateX(-50%);
-  background-color:$color-secondary;
+  background-color: $color-secondary;
 }
-h2.imp-section-title{
-  font-size:18px;
-  line-height:32px;
-  margin-bottom:30px;
+h2.imp-section-title {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 30px;
 }
-h2.imp-section-title small{
-  display:block;
-  font-size:20px;
-  line-height:20px;
-  margin-bottom:25px;
-  color:$color-secondary;
+h2.imp-section-title small {
+  display: block;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 25px;
+  color: $color-secondary;
 }
-.center{
-  text-align:center;
+.center {
+  text-align: center;
 }
-.sm-justify{
-  text-align:justify;
+.sm-justify {
+  text-align: justify;
 }
-.md-center{
-  text-align:inherit;
+.md-center {
+  text-align: inherit;
 }
-@media(min-width:769px){
-  .md-center{
-    text-align:center;
+@media (min-width: 769px) {
+  .md-center {
+    text-align: center;
   }
-  h3{
-    font-size:30px;
-    line-height:43px;
-    text-align:justify;
+  h3 {
+    font-size: 30px;
+    line-height: 43px;
+    text-align: justify;
   }
-  p{
-    font-size:16px;
-    line-height:30px;
-    text-align:justify;
+  p {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
   }
-  p.imp-ttl-large{
-    text-align:left;
-    font-size:20px;
-    line-height:20px;
-    padding-bottom:20px;
+  p.imp-ttl-large {
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 20px;
   }
-  p.imp-ttl-large::after{
-    left:0;
+  p.imp-ttl-large::after {
+    left: 0;
     transform: none;
   }
-  h2.imp-section-title{
-    font-size:30px;
-    line-height:42px;
-    margin-bottom:30px;
+  h2.imp-section-title {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 30px;
   }
 }
 
 /*************** BUTTONS **************/
-.imp-button-wrapper{
-  display:flex;
+.imp-button-wrapper {
+  display: flex;
   justify-content: center;
-  a,button{
-    display:block;
-    position:relative;
-    font-size:18px;
-    font-weight:bold;
-    color:$text-color;
+  a,
+  button {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    color: #b89d85;
     text-decoration: none;
-    line-height:18px;
+    line-height: 18px;
     white-space: nowrap;
-    padding:20px 20px;
-    background:none;
-    border:none;
+    padding: 20px 20px;
+    background: none;
+    border: none;
+    border: 1px solid #b89d85;
+    border-radius: 3px;
+    padding-right:40px;
+    transition:0.3s ease-in-out;
   }
-  a::before,
-  a::after,
-  button::before,
-  button::after{
-    content:"";
-    display:block;
+  a i,button i{
     position:absolute;
-    left:0;
-    width:100%;
-    background-color:$color-secondary;
-    height:5px;
-    z-index:1;
+    right:20px;
   }
-  a::before,
-  button::before{
-    top:0;
-  }
-  a::after,
-  button::after{
-    bottom:0;
-  }
-}
-@media(min-width:769px){
-  .imp-button-wrapper{
-    a,
-    button{
-      transition:0.3s ease-in-out;
-    }
-    a::before,
-    button::before{
-      top:auto;
-      bottom:0;
-      transition:all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    a:hover::before,
-    button:hover::before{
-      top:auto;
-      bottom:100%;
-    }
-    a:hover,
-    button:hover{
-      color:transparentize($color-primary, 0.3);
-    }
+  a:hover,
+  button:hover{
+    color:white;
+    background-color:#b89d85;
   }
 }
 
 /*********** TABLES ****************/
-table th, table td{
-  padding:20px 20px 10px 20px;
-  font-size:14px;
-  line-height:28px;
+table th,
+table td {
+  padding: 20px 20px 10px 20px;
+  font-size: 14px;
+  line-height: 28px;
   text-align: justify;
 }
-table th{
-  width:30%;
-  border-bottom:3px solid #b89d85;
+table th {
+  width: 40%;
+  border-bottom: 3px solid #b89d85;
   vertical-align: bottom;
 }
-table td{
+table td {
   color: #969699;
-  border-bottom:1px solid white;
-  padding-right:0;
+  border-bottom: 1px solid white;
+  padding-right: 0;
   text-align: justify;
 }
-@media(min-width:769px){
-  table th, table td{
-    font-size:16px;
+@media (min-width: 769px) {
+  table th,
+  table td {
+    font-size: 16px;
   }
-  table td{
-    line-height:30px;
+  table td {
+    line-height: 30px;
   }
 }

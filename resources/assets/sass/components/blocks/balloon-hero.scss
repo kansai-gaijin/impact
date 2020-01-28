@@ -1,5 +1,5 @@
 .balloon-hero {
-  height: 570px;
+  height: calc(100vh - 94px);
   position: relative;
   background-color: #000;
   z-index: 0;
@@ -83,5 +83,101 @@
   span:nth-of-type(1):after,
   span:nth-of-type(6):after {
     margin-left: 1px;
+  }
+}
+
+/***** new *******/
+
+.balloon-hero h1,
+.balloon-hero h3 {
+  position: absolute;
+  top: 50%;
+  right: auto;
+  left: 0;
+  transform: translateY(0);
+  margin-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0.5s;
+}
+.balloon-hero .small-wrapper {
+  position: relative;
+}
+.balloon-hero h1 {
+  font-size: 30px;
+  letter-spacing: 15px;
+  padding-left: 15px;
+  background-color: white;
+  color: #18181a;
+  line-height: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.balloon-hero h3 {
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0;
+  margin-left: 20px;
+  top: 50%;
+  background-color: white;
+  color: #18181a;
+  text-align: center;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top:60px;
+}
+.balloon-hero h1 span,
+.balloon-hero h3 span {
+  display: block;
+  transform: translateY(150%);
+  transition: all 0.3s ease-in-out .8s;
+}
+body.loaded .balloon-hero h1,
+body.loaded .balloon-hero h3 {
+  transform: translateY(-50%);
+  opacity: 1;
+}
+body.loaded .balloon-hero h1 span,
+body.loaded .balloon-hero h3 span {
+  transform: translateY(0);
+}
+@media (min-width: 769px) {
+  .balloon-hero h1,
+  .balloon-hero h3 {
+    position: absolute;
+    top: 50%;
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-left: 0;
+  }
+  .balloon-hero h1 {
+    font-size: 60px;
+    letter-spacing: 15px;
+    padding-left: 15px;
+    background-color: white;
+    color: #18181a;
+    line-height: 60px !important;
+    padding-top: 5px;
+  }
+  .balloon-hero h3 {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0;
+    top: 63%;
+    background-color: white;
+    color: #18181a;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 0 !important;
+  }
+  body.loaded .balloon-hero h1,
+  body.loaded .balloon-hero h3 {
+    transform: translate(-50%, -50%);
+    opacity: 1;
   }
 }
