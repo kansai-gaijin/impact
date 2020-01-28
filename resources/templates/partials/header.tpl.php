@@ -16,7 +16,7 @@
           <strong>Tel : </strong><a href="tel:06-000-0000">06-000-0000</a>
         </li>
         <li>
-          <strong>Mail : </strong><a href="mailto:info@impact.co.jp">info@impact.co.jp</a>
+          <strong>Mail : </strong><a href="mailto:info@impact-japan.net">info@impact-japan.net</a>
         </li>
       </ul>
     </div>
