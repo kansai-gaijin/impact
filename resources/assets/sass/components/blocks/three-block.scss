@@ -1,0 +1,24 @@
+.three-image img:nth-of-type(1),
+.three-image img:nth-of-type(2){
+  display:none;
+}
+
+@media(min-width:769px){
+  .three-image img{
+    display:block!important;
+  }
+  .three-image img:first-of-type{
+    width:80%;
+    margin-left:auto;
+  }
+  .three-image img:nth-of-type(2){
+    width:50%;
+    margin-right:auto;
+    margin-top:-20%;
+  }
+  .three-image img:last-of-type{
+    width:70%;
+    margin-left:auto;
+    margin-top:-16%;
+  }
+}

@@ -7,7 +7,7 @@
         <?php wp_head(); ?>
         <script src="https://kit.fontawesome.com/5ac0764158.js" crossorigin="anonymous"></script>
     </head>
-    <body <?php body_class(); ?>>
+    <body <?php body_class('loading'); ?>>
       <?php do_action('theme/head/header'); ?>
       <div class="site-container">
         <div class="site-inner" role="main" itemprop="mainContentOfPage">

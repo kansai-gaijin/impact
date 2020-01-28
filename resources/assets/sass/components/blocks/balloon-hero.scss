@@ -1,5 +1,5 @@
 .balloon-hero {
-  height: 370px;
+  height: 570px;
   position: relative;
   background-color: #000;
   z-index: 0;
@@ -35,7 +35,7 @@
   }
   h2 {
     width: 100%;
-    height: 40%;
+    height: 60%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -59,7 +59,7 @@
 }
 @media (min-width: 769px) {
   .balloon-hero {
-    height: 689px;
+    height: 789px;
     margin-top: 0;
     h2 {
       height: 50%;

@@ -13,6 +13,7 @@
     "dependencies": {
         "@wordpress/blocks": "^6.10.0",
         "bootstrap-sass": "^3.3.7",
+        "is-in-viewport": "^3.0.4",
         "vue": "^2.4.3"
     },
     "devDependencies": {

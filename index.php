@@ -16,8 +16,24 @@ namespace Impact\Theme\Index;
 use function Impact\Theme\App\template;
 
 /**
+ * Renders page header
+ * 
+ * @see resources/templates/partials/page/page-header.tpl.php
+ */
+function render_page_header(){
+  template('partials/page/page-header',[
+    'title' => 'ニュース＆トピックス',
+    'en_title' => 'NEWS',
+    'background' => 'http://impact.co.jp/wp-content/uploads/2020/01/news-header.jpg',
+    'background_mob' => 'http://impact.co.jp/wp-content/uploads/2020/01/news-header-mob.jpg',
+  ]);
+}
+add_action('theme/index/content_before', 'Impact\Theme\Index\render_page_header');
+
+/**
  * Renders index page.
  *
  * @see resources/templates/index.tpl.php
  */
 template('index');
+

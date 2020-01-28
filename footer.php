@@ -26,7 +26,22 @@ function is_contact(){
   $wp_contact_id = 18;
 
   return ($wp_contact_id === $p_id);
-  //return false;
+  
+}
+
+/**
+ * Checks for service page
+ * 
+ * @return boolean
+ */
+function is_service(){
+  
+  $p_id = get_the_ID();
+
+  $wp_contact_id = array(127,194,224);
+
+  return in_array($p_id,$wp_contact_id);
+  
 }
 
 /**
@@ -36,7 +51,7 @@ function is_contact(){
  */
 function render_footer()
 {
-  template('partials/footer', ['is_contact' => is_contact(), 'contact_url' => get_the_permalink(18)]);
+  template('partials/footer', ['is_contact' => is_contact(), 'is_service' => is_service(), 'contact_url' => get_the_permalink(18)]);
 }
 add_action('theme/foot/footer', 'Impact\Theme\Footer\render_footer');
 
@@ -48,3 +63,16 @@ add_action('theme/foot/footer', 'Impact\Theme\Footer\render_footer');
  * @see resources/templates/layout/footer.tpl.php
  */
 template('layout/footer');
+
+?>
+
+<div id="loader">
+  <div class="loader-inner">
+    <figure>
+      <img src="http://impact.co.jp/wp-content/uploads/2020/01/impact-logo.png" alt="" />
+    </figure>
+    <p>
+      <img src="http://impact.co.jp/wp-content/uploads/2020/01/loader.gif" />
+    </p>
+  </div>
+</div>

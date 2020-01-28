@@ -4,6 +4,9 @@
     <h1>
       <small><?= $en_title ?></small>
       <strong><?= $title ?></strong>
+      <?php if(is_singular('post')):?>
+      <small><?= $date ?></strong>
+      <?php endif; ?>
     </h1>
   </div>
 </section>

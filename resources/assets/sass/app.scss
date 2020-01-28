@@ -18,3 +18,70 @@
 @import 'components/shortcodes';
 @import 'components/page-header';
 @import 'components/animations';
+@import 'components/loader';
+@import 'components/archive';
+
+form input[type="text"],
+form textarea{
+  background:none;
+  border:none;
+  border-bottom:3px solid white;
+  width:100%;
+  padding:13px 10px 10px 10px;
+  transition:all 0.3s ease-in-out;
+}
+form .input-item-wrapper{
+  position:relative;
+}
+form .input-item-wrapper label.js-shrink{
+  position:absolute;
+  font-size:16px;
+  line-height:16px;
+  pointer-events:none;
+  z-index:1;
+  top:14px;
+  transition:0.3s ease-in-out;
+}
+form .input-item-wrapper label.js-shrink span{
+  margin-left:10px;
+  font-size:12px;
+  transition:0.3s ease-in-out;
+}
+form .input-item{
+  margin-bottom:30px;
+}
+form .input-item.has-text .input-item-wrapper label.js-shrink,
+form .input-item.active .input-item-wrapper label.js-shrink{
+  top:0;
+  font-size:9px;
+  line-height:9px;
+  color:#B89D85;
+}
+form .input-item.has-text .input-item-wrapper label.js-shrink span,
+form .input-item.active .input-item-wrapper label.js-shrink span{
+  font-size:9px;
+}
+form input[type="text"]:active,
+form input[type="text"]:focus,
+form textarea:active,
+form textarea:focus{
+  border-color:#B89D85;
+}
+.input-item input.wpcf7-not-valid,
+.input-item textarea.wpcf7-not-valid{
+  border-color:red!important;
+}
+.wpcf7-not-valid-tip{
+  margin-top:10px;
+}
+.wpcf7-validation-errors,.wpcf7-mail-sent-ng{
+  color:white;
+  border-color:red!important;
+  background-color:red;
+  text-align:center;
+  padding:10px!important;
+}
+.form-accept{
+  text-align:center;
+  padding:20px 0 40px 0;
+}

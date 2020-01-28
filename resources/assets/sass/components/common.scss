@@ -15,7 +15,8 @@ ul,li{
 .pc-only{
   display:none;
 }
-a{
+a,
+a:hover{
   text-decoration: none;
 }
 img{
@@ -31,7 +32,7 @@ img{
 }
 
 /*********** FONTS ****************/
-h1,h2,h3{
+h1,h2,h3,h4,h5{
   font-family:$font-family-serif;
   font-weight:bold;
 }
@@ -40,6 +41,13 @@ h3{
   line-height:35px;
   margin:0 0 30px 0;
   text-align:center;
+}
+h5{
+  font-size:16px;
+  font-weight:bold;
+}
+.mincho{
+  font-family:$font-family-serif;
 }
 p{
   font-size:14px;
@@ -83,7 +91,19 @@ h2.imp-section-title small{
   margin-bottom:25px;
   color:$color-secondary;
 }
+.center{
+  text-align:center;
+}
+.sm-justify{
+  text-align:justify;
+}
+.md-center{
+  text-align:inherit;
+}
 @media(min-width:769px){
+  .md-center{
+    text-align:center;
+  }
   h3{
     font-size:30px;
     line-height:43px;
@@ -115,7 +135,7 @@ h2.imp-section-title small{
 .imp-button-wrapper{
   display:flex;
   justify-content: center;
-  a{
+  a,button{
     display:block;
     position:relative;
     font-size:18px;
@@ -125,9 +145,13 @@ h2.imp-section-title small{
     line-height:18px;
     white-space: nowrap;
     padding:20px 20px;
+    background:none;
+    border:none;
   }
   a::before,
-  a::after{
+  a::after,
+  button::before,
+  button::after{
     content:"";
     display:block;
     position:absolute;
@@ -137,29 +161,62 @@ h2.imp-section-title small{
     height:5px;
     z-index:1;
   }
-  a::before{
+  a::before,
+  button::before{
     top:0;
   }
-  a::after{
+  a::after,
+  button::after{
     bottom:0;
   }
 }
 @media(min-width:769px){
   .imp-button-wrapper{
-    a{
+    a,
+    button{
       transition:0.3s ease-in-out;
     }
-    a::before{
+    a::before,
+    button::before{
       top:auto;
       bottom:0;
       transition:all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
-    a:hover::before{
+    a:hover::before,
+    button:hover::before{
       top:auto;
       bottom:100%;
     }
-    a:hover{
+    a:hover,
+    button:hover{
       color:transparentize($color-primary, 0.3);
     }
+  }
+}
+
+/*********** TABLES ****************/
+table th, table td{
+  padding:20px 20px 10px 20px;
+  font-size:14px;
+  line-height:28px;
+  text-align: justify;
+}
+table th{
+  width:30%;
+  border-bottom:3px solid #b89d85;
+  vertical-align: bottom;
+}
+table td{
+  color: #969699;
+  border-bottom:1px solid white;
+  padding-right:0;
+  text-align: justify;
+}
+@media(min-width:769px){
+  table th, table td{
+    font-size:16px;
+  }
+  table td{
+    line-height:30px;
   }
 }

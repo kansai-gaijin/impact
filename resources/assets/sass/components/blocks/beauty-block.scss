@@ -113,24 +113,20 @@
 }
 .beauty-block figure{
   position:relative;
-  padding-left:80px;
   text-align:center;
 }
 .beauty-block figure img{
   max-width:100%;
 }
 
-.beauty-block figure figcaption{
-  position:absolute;
-  bottom:20px;
-  left:0;
-  max-width:80%;
-}
 @media(min-width:993px){
   .beauty-block.special .row{
     display:block;
   }
   .beauty-block.special{
     padding:160px 0;
+  }
+  .beauty-block figure{
+    padding-top:80px;
   }
 }

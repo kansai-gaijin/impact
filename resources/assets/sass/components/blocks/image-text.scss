@@ -1,0 +1,87 @@
+.image-text {
+  figure {
+    position: relative;
+  }
+  figure img {
+    width: 100%;
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  figcaption {
+    position: absolute;
+    left: 15px;
+    padding: 15px;
+    background-color: white;
+    color: #707070;
+    font-family: "\6E38\660E\671D", YuMincho, "Hiragino Mincho ProN W3", "\30D2\30E9\30AE\30CE\660E\671D ProN W3",
+      "Hiragino Mincho ProN", "HG\660E\671D E", "\FF2D\FF33 \FF30\660E\671D", "\FF2D\FF33 \660E\671D", serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    max-width: 83vw;
+    text-align: left;
+    bottom: 20px;
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  figcaption span {
+    transform: translateY(50px);
+    display: block;
+    opacity: 0;
+  }
+  figure.start {
+    img,
+    figcaption,
+    figcaption span {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    img {
+      transition: 0.3s ease-in-out;
+    }
+    figcaption {
+      transition: 0.3s ease-in-out 0.1s;
+    }
+    figcaption span {
+      transition: 0.3s ease-in-out 0.2s;
+    }
+  }
+}
+.image-text.page-item:first-of-type figure.start{
+  img {
+    transition: 0.3s ease-in-out 0.2;
+  }
+  figcaption {
+    transition: 0.3s ease-in-out 0.3s;
+    span {
+      transition: 0.3s ease-in-out 0.4s;
+    }
+  }
+}
+body.loaded .image-text.page-item:first-of-type figure.start{
+  img {
+    transition: 0.3s ease-in-out 0;
+  }
+  figcaption {
+    transition: 0.3s ease-in-out 0.1s;
+    span {
+      transition: 0.3s ease-in-out 0.2s;
+    }
+  }
+}
+
+@media(min-width:600px){
+  .image-text figcaption{
+    font-size:20px;
+    bottom:auto;
+    top:40%;
+  }
+}
+@media(min-width:993px){
+  .image-text figcaption{
+    font-size:30px;
+    bottom:auto;
+    top:40%;
+    left:30px;
+  }
+}

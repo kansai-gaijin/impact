@@ -23,7 +23,8 @@ function render_header()
 {
   template('partials/header', [
     'title' => get_the_title(),
-    'logo' => 'http://impact.co.jp/wp-content/uploads/2020/01/temp-logo.png'
+    'logo' => 'http://impact.co.jp/wp-content/uploads/2020/01/impact-logo-main.png',
+    'site_url' => get_site_url()
   ]);
   template('partials/drawer');
 }
