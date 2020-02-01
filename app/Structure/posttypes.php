@@ -22,7 +22,7 @@ use function Impact\Theme\App\config;
  */
 function register_book_post_type()
 {
-    register_post_type('book', [
+    /*register_post_type('book', [
         'description' => __('Collection of books.', config('textdomain')),
         'public' => true,
         'supports' => ['title', 'editor', 'excerpt', 'thumbnail'],
@@ -42,6 +42,6 @@ function register_book_post_type()
             'not_found' => __('No books found.', config('textdomain')),
             'not_found_in_trash' => __('No books found in Trash.', config('textdomain')),
         ],
-    ]);
+    ]);*/
 }
 add_action('init', 'Impact\Theme\App\Structure\register_book_post_type');
